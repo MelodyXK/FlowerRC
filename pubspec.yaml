@@ -1,0 +1,47 @@
+name: flower_recognizer
+description: "A new Flutter project."
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.4 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  sqflite: ^2.2.8+4        # 数据库
+  path_provider: ^2.1.1    # 文件路径
+  path: ^1.8.3             # 路径处理
+  camera: ^0.10.5          # 相机
+  tflite_flutter: ^0.10.4  # 使用最新版本
+  image_picker: ^1.1.2    # 选择图片
+  image: ^4.2.0          # 图像处理
+  flutter_animate: ^4.2.0  # 动画库
+  getwidget: ^4.0.0  # 美化组件
+  flutter_staggered_animations: ^1.1.1  # 交错动画
+  intl: ^0.19.0
+  shared_preferences: ^2.0.15
+  provider: ^6.0.0
+  get: ^4.6.6
+
+  cupertino_icons: ^1.0.6
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^3.0.0
+
+flutter:
+  assets:
+    - assets/models/mobilenetv3large_quantized.tflite
+    - assets/models/efficientnetv2s_quantized.tflite
+    - assets/models/densenet121_quantized.tflite
+    - assets/class_names.json
+    - assets/images/
+    - assets/images/logo1.png
+    - assets/images/black.jpg
+    - assets/images/white.jpg
+    - assets/data/flowers.json
+  uses-material-design: true
