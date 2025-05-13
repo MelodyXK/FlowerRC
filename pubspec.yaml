@@ -18,7 +18,7 @@ dependencies:
   image_picker: ^1.1.2    # 选择图片
   image: ^4.2.0          # 图像处理
   flutter_animate: ^4.2.0  # 动画库
-  getwidget: ^4.0.0  # 美化组件
+  getwidget: ^6.0.0  # 美化组件
   flutter_staggered_animations: ^1.1.1  # 交错动画
   intl: ^0.19.0
   shared_preferences: ^2.0.15
