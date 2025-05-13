@@ -33,7 +33,6 @@ class MyApp extends StatelessWidget {
     final themeProvider = Provider.of<ThemeProvider>(context);
     return GetMaterialApp(
       title: 'FlowerAI',
-      debugShowCheckedModeBanner: false, // 添加这一行
       theme: themeProvider.themeData,
       home: HomeScreen(),
       routes: {
